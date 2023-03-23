@@ -1,0 +1,8 @@
+options:
+  fixScript: ".dev-cloud/fix.sh"
+  postSetupScripts:
+    - ".dev-cloud/post.sh"
+  preSetupScripts:
+    - ".dev-cloud/pre.sh"
+#  dependsOn:
+  readinessProbe: http://localhost:8080

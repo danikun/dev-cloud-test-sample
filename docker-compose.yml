@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+  api:
+    container_name: api
+    build:
+      dockerfile: Api/Dockerfile
+      target: build-dev
+    volumes:
+      - .:/src
+    working_dir: /src
+    env_file:
+      - .env
+    expose:
+      - 80
+    ports:
+      - '8080:80'
+    command: "dotnet watch run --project Api/Api.csproj --non-interactive"

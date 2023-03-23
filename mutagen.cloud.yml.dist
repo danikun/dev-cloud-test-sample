@@ -1,0 +1,17 @@
+sync:
+    defaults:
+        ignore:
+            vcs: true
+            paths:
+                - bin
+                - obj
+        configurationBeta:
+            permissions:
+                defaultOwner: {user}
+                defaultGroup: {group}
+                defaultFileMode: 0644
+                defaultDirectoryMode: 0755
+    dev-cloud-test-sample:
+        alpha: .
+        beta: "{user}@docplanner-cloud-dev-env:~/projects/dev-cloud-test-sample"
+        mode: "two-way-resolved"
