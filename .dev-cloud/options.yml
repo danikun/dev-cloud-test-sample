@@ -5,4 +5,4 @@ options:
   preSetupScripts:
     - ".dev-cloud/pre.sh"
 #  dependsOn:
-  readinessProbe: http://localhost:8080
+#  readinessProbe: http://localhost:8080
